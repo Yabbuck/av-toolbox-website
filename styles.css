@@ -512,6 +512,20 @@ h2 {
   background:#76667e;
 }
 
+.feature-badge {
+  display:inline-block;
+  margin-left:5px;
+  padding:1px 6px;
+  border:1px solid #d8cedd;
+  border-radius:999px;
+  background:#f0eaf3;
+  color:#765280;
+  font:600 8px/1.5 ui-monospace,Consolas,monospace;
+  letter-spacing:.06em;
+  vertical-align:1px;
+  white-space:nowrap;
+}
+
 .screenshots-section {
   background:#fff;
   border-top:1px solid #e8e5e8;
