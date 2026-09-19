@@ -502,6 +502,84 @@ h2 {
   background:#76667e;
 }
 
+.screenshots-section {
+  background:#fff;
+  border-top:1px solid #e8e5e8;
+}
+
+.screenshot-heading {
+  margin-bottom:48px;
+}
+
+.screenshot-grid {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:clamp(28px,5vw,64px);
+  align-items:start;
+}
+
+.screenshot-card {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:20px;
+  margin:0;
+}
+
+.phone-frame {
+  width:min(100%,252px);
+  padding:8px;
+  background:#1d1c22;
+  border:1px solid #34313a;
+  border-radius:38px;
+  box-shadow:0 18px 38px #211a2915,0 4px 10px #211a2910;
+  transition:transform .18s ease,box-shadow .18s ease;
+}
+
+.screenshot-card-featured .phone-frame {
+  width:min(100%,280px);
+}
+
+.screenshot-card:hover .phone-frame {
+  transform:translateY(-4px);
+  box-shadow:0 22px 44px #211a291c,0 5px 12px #211a2912;
+}
+
+.phone-screen {
+  overflow:hidden;
+  border-radius:30px;
+  background:#f9f7fa;
+}
+
+.phone-screen img {
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:864/1939;
+  object-fit:contain;
+}
+
+.screenshot-card figcaption {
+  width:min(100%,280px);
+  text-align:center;
+}
+
+.screenshot-card figcaption strong,.screenshot-card figcaption span {
+  display:block;
+}
+
+.screenshot-card figcaption strong {
+  font-size:15px;
+  letter-spacing:-.015em;
+}
+
+.screenshot-card figcaption span {
+  margin-top:5px;
+  color:var(--muted);
+  font-size:12px;
+  line-height:1.6;
+}
+
 .privacy-section {
   background:#eeedeb;
   border-block:1px solid #e3e0e2;
@@ -821,6 +899,13 @@ h2 {
   .category-grid {
     grid-template-columns:repeat(2,minmax(0,1fr));
   }
+  .screenshot-grid {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    row-gap:52px;
+  }
+  .screenshot-card:last-child {
+    grid-column:1/-1;
+  }
   .card-description {
     min-height:0;
   }
@@ -902,6 +987,22 @@ h2 {
   .section-heading>p {
     max-width:200px;
     font-size:12px;
+  }
+  .screenshot-heading {
+    margin-bottom:38px;
+  }
+  .screenshot-grid {
+    grid-template-columns:1fr;
+    gap:48px;
+  }
+  .screenshot-card:last-child {
+    grid-column:auto;
+  }
+  .phone-frame,.screenshot-card-featured .phone-frame {
+    width:min(78vw,280px);
+  }
+  .screenshot-card:hover .phone-frame {
+    transform:none;
   }
   .desktop-break {
     display:none;
@@ -1085,6 +1186,9 @@ h2 {
     animation:none!important;
   }
   .category-card:hover {
+    transform:none;
+  }
+  .screenshot-card:hover .phone-frame {
     transform:none;
   }
 }
