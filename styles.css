@@ -794,6 +794,14 @@ h2 {
   color:var(--muted);
 }
 
+@media(min-width:761px) {
+  .hero {
+    min-height:calc(100vh - 88px);
+    display:flex;
+    align-items:center;
+  }
+}
+
 @media(min-width:1400px) {
   .hero {
     padding-block:105px;
