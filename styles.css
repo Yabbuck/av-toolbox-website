@@ -512,17 +512,18 @@ h2 {
   background:#76667e;
 }
 
-.feature-badge {
-  display:inline-block;
-  margin-left:5px;
-  padding:1px 6px;
-  border:1px solid #d8cedd;
+.feature-list .feature-badge {
+  display:inline-flex;
+  align-items:center;
+  margin-left:6px;
+  padding:2px 7px;
+  border:1px solid #c7a9d2;
   border-radius:999px;
-  background:#f0eaf3;
-  color:#765280;
-  font:600 8px/1.5 ui-monospace,Consolas,monospace;
+  background:linear-gradient(115deg,#f52e9d0a,#7828ed0d 68%,#3634fa0a);
+  color:#704978;
+  font:700 8px/1.4 ui-monospace,Consolas,monospace;
   letter-spacing:.06em;
-  vertical-align:1px;
+  vertical-align:middle;
   white-space:nowrap;
 }
 
