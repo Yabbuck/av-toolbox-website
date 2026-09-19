@@ -964,6 +964,24 @@ h2 {
   color:#7c438d;
 }
 
+.support-contact-body {
+  min-width:0;
+}
+
+.support-email {
+  color:#61496c;
+  font-size:16px;
+  font-weight:650;
+  overflow-wrap:anywhere;
+  text-underline-offset:4px;
+}
+
+.draft-notice .support-contact-note {
+  margin-top:3px;
+  color:#756a7a;
+  font-size:11px;
+}
+
 .support-note {
   display:flex;
   gap:12px;
