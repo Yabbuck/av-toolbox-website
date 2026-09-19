@@ -24,58 +24,242 @@
 <div class="document-heading">
 <p class="eyebrow">PRIVACY / DRAFT</p>
 <h1>Privacy Policy</h1>
-<p class="document-intro">An overview of the app’s current approach to data and the details still to be confirmed.</p>
+<nav class="language-nav" aria-label="Privacy policy languages"><a href="#privacy-en" lang="en">English</a><a href="#privacy-de" lang="de">Deutsch</a></nav>
 </div>
 <div class="draft-notice"><span class="notice-label">DRAFT</span>
 <p>Draft — final legal and contact details will be added before public release.</p>
 </div>
 <div class="document-layout">
-<nav class="contents" aria-label="On this page">
-<p class="eyebrow">ON THIS PAGE</p><a href="#controller">Controller / responsible party</a><a href="#app-data">Data processing within the app</a><a href="#local-network">Local network communication</a><a href="#device-storage">Local device storage</a><a href="#external-services">External services</a><a href="#website">Website data processing</a><a href="#contact">Contact</a><a href="#changes">Changes to this policy</a><a href="#updated">Last updated</a>
+<nav class="contents privacy-contents" aria-label="Privacy policy contents">
+<p class="eyebrow">ON THIS PAGE</p>
+<div class="contents-group" lang="en"><a class="contents-language" href="#privacy-en">English</a><a href="#en-controller">1. Controller</a><a href="#en-app">2. Privacy in the app</a><a href="#en-website">3. Website</a><a href="#en-email">4. Contact by email</a><a href="#en-retention">5. Retention and deletion</a><a href="#en-recipients">6. Recipients and transfers</a><a href="#en-rights">7. Your rights</a><a href="#en-automated">8. Automated decisions</a><a href="#en-changes">9. Changes</a></div>
+<div class="contents-group" lang="de"><a class="contents-language" href="#privacy-de">Deutsch</a><a href="#de-controller">1. Verantwortlicher</a><a href="#de-app">2. Datenschutz in der App</a><a href="#de-website">3. Website</a><a href="#de-email">4. Kontakt per E-Mail</a><a href="#de-retention">5. Speicherdauer und Löschung</a><a href="#de-recipients">6. Empfänger und Übermittlung</a><a href="#de-rights">7. Rechte betroffener Personen</a><a href="#de-automated">8. Automatisierte Entscheidungen</a><a href="#de-changes">9. Änderungen</a></div>
 </nav>
 <div class="document-content">
-<section id="controller">
-<h2>Controller / responsible party</h2>
-<p class="placeholder">To be confirmed: the responsible party’s legal name, address, and contact details.</p>
+<article class="privacy-language" id="privacy-en" lang="en" aria-labelledby="privacy-en-title">
+<h2 class="policy-title" id="privacy-en-title">Privacy Policy</h2>
+<p class="policy-date">Last updated: <time datetime="2026-09-19">19 September 2026</time></p>
+<p class="policy-lead">This Privacy Policy applies to the AV Toolbox Android application and the AV Toolbox website.</p>
+<section id="en-controller">
+<h3>1. Controller</h3>
+<p>AV Toolbox is a product operated by:</p>
+<p class="placeholder policy-placeholder">[[LEGAL_NAME]]<br>[[POSTAL_ADDRESS]]</p>
+<p>Privacy contact:<br><span class="placeholder-inline">[[PRIVACY_EMAIL]]</span></p>
+<p>The final legal and contact information will be inserted before the public release of AV Toolbox.</p>
 </section>
-<section id="app-data">
-<h2>Data processing within the app</h2>
-<p>The current app has no user accounts, advertising, analytics integration, or cloud backend. Its primary functionality runs locally on the device.</p>
-<p class="placeholder">To be confirmed: the final description of app data processing and any applicable legal information.</p>
+<section id="en-app">
+<h3>2. Privacy in the AV Toolbox app</h3>
+<p>AV Toolbox is designed primarily for local operation. The current version does not provide user accounts, advertising, analytics or an AV Toolbox cloud backend.</p>
+<p>AV Toolbox does not transmit app usage analytics, advertising identifiers or user profiles to the operator of AV Toolbox.</p>
+<section class="policy-subsection" id="en-local-network">
+<h4>2.1 Local network features</h4>
+<p>Several AV Toolbox features communicate directly with devices and services selected by the user or discovered on the user's local network.</p>
+<p>These features may process technical network information such as IPv4 addresses, host names, ports, service types, DNS-SD information, device information, network interfaces, prefix information and transport type.</p>
+<p>This information is processed locally on the user's device for discovery, connection and control functionality. It is not transmitted to an AV Toolbox-operated server.</p>
+<p>Network Discovery keeps its discovered-device registry in memory. The discovery registry is not stored persistently.</p>
 </section>
-<section id="local-network">
-<h2>Local network communication</h2>
-<p>Discovery and control tools communicate with devices and services on the user’s local network. This includes local network discovery, Companion Remote, and Canon PTZ Camera Control.</p>
-<p class="placeholder">To be confirmed: the specific data exchanged, permissions required, and behavior of each network feature.</p>
+<section class="policy-subsection" id="en-companion">
+<h4>2.2 Companion Remote</h4>
+<p>Companion Remote connects directly to the Companion server address selected by the user.</p>
+<p>The web content displayed by Companion Remote is provided by that Companion server. AV Toolbox does not operate the selected Companion server and does not route the connection through an AV Toolbox server.</p>
+<p>Up to three recently used Companion server addresses may be stored locally on the device so that they can be selected again later. This history can be removed by the user.</p>
+<p>Data processing performed independently by a Companion server or another third-party system is subject to the privacy practices of the respective operator.</p>
 </section>
-<section id="device-storage">
-<h2>Local device storage</h2>
-<p>Some app preferences and history may be stored locally on the device.</p>
-<p class="placeholder">To be confirmed: the information stored, storage duration, and available deletion or reset options.</p>
+<section class="policy-subsection" id="en-camera">
+<h4>2.3 Camera Control</h4>
+<p>Camera Control communicates directly with supported cameras on the network selected by the user.</p>
+<p>Control commands and preview data are exchanged directly between the user's device and the camera. Camera preview frames are processed transiently for display and are not uploaded to AV Toolbox or persistently stored by AV Toolbox.</p>
+<p>Camera connection state is not stored persistently.</p>
 </section>
-<section id="external-services">
-<h2>External services</h2>
-<p>The current app has no cloud backend or analytics integration. Network tools interact with devices and services selected for the local workflow.</p>
-<p class="placeholder">To be confirmed: details of any external services relevant to the final release or its distribution.</p>
+<section class="policy-subsection" id="en-storage">
+<h4>2.4 Local app storage</h4>
+<p>AV Toolbox stores a limited amount of information locally on the user's device.</p>
+<p>This currently includes the selected Light or Dark appearance setting and up to three recently used Companion server addresses.</p>
+<p>The External Display feature can also store a local app-private copy of an image explicitly selected by the user. The app stores technical metadata for that image, including its file name, dimensions and selected scaling mode. The selected image can be removed from within the feature.</p>
+<p>Bundled media used by AV Toolbox may also be copied into app-private storage for technical playback purposes.</p>
+<p>Locally stored app data is not transferred to AV Toolbox. It normally remains on the device until it is changed or removed by the user, the relevant app data is cleared, or the application is uninstalled, subject to Android's device and backup behaviour.</p>
 </section>
-<section id="website">
-<h2>Website data processing</h2>
-<p>This website uses static HTML and CSS. It does not include contact forms, analytics, tracking scripts, cookies, or externally hosted fonts.</p>
-<p class="placeholder">To be confirmed: the website hosting provider and its processing of request data, including any server logs and retention periods.</p>
+<section class="policy-subsection" id="en-permissions">
+<h4>2.5 Device permissions</h4>
+<p>The current Android version uses network-related permissions required for local network communication, network-state detection and multicast-based service discovery.</p>
+<p>The current version does not request Android permissions for precise or approximate location, the device camera, microphone, contacts or general access to the user's media library.</p>
+<p>When the user selects a custom image for External Display, Android's system document picker is used so that the user explicitly chooses the file to which the app receives access.</p>
 </section>
-<section id="contact">
-<h2>Contact</h2>
-<p class="placeholder">Privacy contact details will be published here before release.</p>
+<section class="policy-subsection" id="en-security">
+<h4>2.6 Network security</h4>
+<p>Some professional AV devices and services use protocols such as HTTP that do not provide transport encryption.</p>
+<p>AV Toolbox supports such local protocols where required for device compatibility. Users should therefore operate network-control features on trusted local networks and follow the security recommendations of the respective device manufacturer.</p>
+<p>AV Toolbox does not use these local connections to transmit data to an AV Toolbox-operated cloud service.</p>
 </section>
-<section id="changes">
-<h2>Changes to this policy</h2>
-<p>This draft will be reviewed as release details are confirmed. The finalized policy and its update date will be published here.</p>
+<section class="policy-subsection" id="en-third-party">
+<h4>2.7 Third-party services</h4>
+<p>The current AV Toolbox application does not include advertising or analytics services and does not depend on an AV Toolbox cloud backend.</p>
+<p>AV Toolbox can communicate with third-party AV products and services when the user chooses to use the corresponding feature. Those systems are operated independently from AV Toolbox.</p>
+<p>Distribution platforms such as Google Play may independently process information relating to downloads, purchases or use of their services under their own privacy policies.</p>
 </section>
-<section id="updated">
-<h2>Last updated</h2>
-<p>Draft prepared: <time datetime="2026-09-19">19 September 2026</time>.</p>
-<p class="placeholder">Final policy effective date: to be confirmed.</p>
 </section>
+<section id="en-website">
+<h3>3. AV Toolbox website</h3>
+<p>The AV Toolbox website currently consists of static HTML and CSS.</p>
+<p>The website code does not include advertising, analytics, tracking scripts, externally hosted fonts or a contact form.</p>
+<p>The website is currently hosted using GitHub Pages.</p>
+<p>When a GitHub Pages website is accessed, GitHub records the visitor's IP address for security purposes. GitHub may also process technical request and security information in accordance with its own privacy policies.</p>
+<p>The purpose of this processing is the secure, reliable and technically necessary delivery of the website. Where this processing is attributable to us, the legal basis is Article 6(1)(f) GDPR. Our legitimate interest is the secure and reliable provision of the AV Toolbox website.</p>
+<p>GitHub may process personal data in countries outside the European Economic Area, including the United States. GitHub states that it uses recognised transfer mechanisms including the EU-U.S. Data Privacy Framework and European Commission Standard Contractual Clauses where applicable.</p>
+<p>AV Toolbox does not operate its own visitor analytics or website access-log analytics.</p>
+<p>If the website hosting provider changes, this Privacy Policy will be updated accordingly.</p>
+</section>
+<section id="en-email">
+<h3>4. Contact by email</h3>
+<p>Once the AV Toolbox contact address has been activated, users may contact us by email.</p>
+<p>When you contact us by email, we process the information contained in the message, your email address and the technical information necessary for delivering and answering the message.</p>
+<p>Depending on the content of the request, processing is based on Article 6(1)(b) GDPR where it is necessary for contractual or pre-contractual communication, or Article 6(1)(f) GDPR for general support and communication. Our legitimate interest is answering legitimate enquiries concerning AV Toolbox.</p>
+<p>Email will be provided through:</p>
+<p class="placeholder policy-placeholder">[[MAIL_PROVIDER]]</p>
+<p>The final provider information will be inserted once the AV Toolbox email service is active.</p>
+</section>
+<section id="en-retention">
+<h3>5. Retention and deletion</h3>
+<p>Data stored only locally by the AV Toolbox application is not accessible to the operator of AV Toolbox and can be removed through the relevant app feature, by clearing the application's data or by uninstalling the application, depending on the type of data.</p>
+<p>Website hosting data is retained by GitHub according to GitHub's applicable retention and security policies. AV Toolbox does not maintain a separate visitor analytics database.</p>
+<p>Email correspondence is retained only for as long as necessary to process the request and, where applicable, for the duration required by statutory retention obligations or the establishment, exercise or defence of legal claims.</p>
+</section>
+<section id="en-recipients">
+<h3>6. Recipients and international transfers</h3>
+<p>AV Toolbox does not sell personal data.</p>
+<p>Personal data relating to website access may be processed by GitHub as the website hosting provider.</p>
+<p>Once email support is activated, the selected email provider may process contact data for the purpose of providing the email service.</p>
+<p>GitHub operates internationally and may process personal data outside the European Economic Area. GitHub describes the safeguards it uses for international transfers in its own privacy documentation.</p>
+</section>
+<section id="en-rights">
+<h3>7. Your rights</h3>
+<p>Where we process personal data concerning you, you may have the rights provided by the GDPR, including the right of access, rectification, erasure, restriction of processing, objection and, where applicable, data portability.</p>
+<p>Where processing is based on consent, consent may be withdrawn at any time with effect for the future.</p>
+<p>You also have the right to lodge a complaint with a competent data protection supervisory authority.</p>
+<p>Please note that data processed exclusively and locally within the AV Toolbox app is not transmitted to us and therefore cannot be retrieved or deleted by us. Such data can instead be managed on the user's own device.</p>
+</section>
+<section id="en-automated">
+<h3>8. Automated decision-making</h3>
+<p>AV Toolbox does not use personal data for automated decision-making or profiling that produces legal or similarly significant effects.</p>
+</section>
+<section id="en-changes">
+<h3>9. Changes to this Privacy Policy</h3>
+<p>This Privacy Policy may be updated if AV Toolbox gains new functionality, adds services, changes hosting providers or otherwise changes its processing of personal data.</p>
+<p>The current version will always be published on this page.</p>
+</section>
+</article>
+<article class="privacy-language" id="privacy-de" lang="de" aria-labelledby="privacy-de-title">
+<h2 class="policy-title" id="privacy-de-title">Datenschutzerklärung</h2>
+<p class="policy-date">Stand: <time datetime="2026-09-19">19. September 2026</time></p>
+<p class="policy-lead">Diese Datenschutzerklärung gilt für die Android-App AV Toolbox sowie für die Website von AV Toolbox.</p>
+<section id="de-controller">
+<h3>1. Verantwortlicher</h3>
+<p>AV Toolbox ist ein Produkt von:</p>
+<p class="placeholder policy-placeholder">[[LEGAL_NAME]]<br>[[POSTAL_ADDRESS]]</p>
+<p>Kontakt für Datenschutzanfragen:<br><span class="placeholder-inline">[[PRIVACY_EMAIL]]</span></p>
+<p>Die endgültigen Anbieter- und Kontaktdaten werden vor der öffentlichen Veröffentlichung von AV Toolbox ergänzt.</p>
+</section>
+<section id="de-app">
+<h3>2. Datenschutz in der AV-Toolbox-App</h3>
+<p>AV Toolbox ist überwiegend für den lokalen Betrieb ausgelegt. Die aktuelle Version enthält keine Benutzerkonten, keine Werbung, keine Analysefunktionen und kein von AV Toolbox betriebenes Cloud-Backend.</p>
+<p>AV Toolbox übermittelt keine Nutzungsanalysen, Werbe-IDs oder Benutzerprofile an den Betreiber von AV Toolbox.</p>
+<section class="policy-subsection" id="de-local-network">
+<h4>2.1 Funktionen im lokalen Netzwerk</h4>
+<p>Mehrere Funktionen von AV Toolbox kommunizieren direkt mit Geräten und Diensten, die vom Nutzer ausgewählt oder im lokalen Netzwerk gefunden werden.</p>
+<p>Dabei können technische Netzwerkinformationen wie IPv4-Adressen, Hostnamen, Ports, Diensttypen, DNS-SD-Informationen, Geräteinformationen, Netzwerkschnittstellen, Präfixinformationen und Transportarten verarbeitet werden.</p>
+<p>Diese Informationen werden lokal auf dem Gerät des Nutzers verarbeitet, um Geräte zu finden, Verbindungen herzustellen und Geräte zu steuern. Sie werden nicht an einen von AV Toolbox betriebenen Server übertragen.</p>
+<p>Die von Network Discovery gefundenen Geräte werden in einem flüchtigen Speicherregister verwaltet. Dieses Discovery-Register wird nicht dauerhaft gespeichert.</p>
+</section>
+<section class="policy-subsection" id="de-companion">
+<h4>2.2 Companion Remote</h4>
+<p>Companion Remote verbindet sich direkt mit der vom Nutzer ausgewählten Companion-Serveradresse.</p>
+<p>Die in Companion Remote dargestellten Webinhalte werden unmittelbar vom jeweiligen Companion-Server bereitgestellt. AV Toolbox betreibt diesen Server nicht und leitet die Verbindung nicht über einen AV-Toolbox-Server.</p>
+<p>Bis zu drei zuletzt verwendete Companion-Serveradressen können lokal auf dem Gerät gespeichert werden, damit sie später erneut ausgewählt werden können. Der Nutzer kann diesen Verlauf entfernen.</p>
+<p>Eine eigenständige Datenverarbeitung durch einen Companion-Server oder ein anderes Drittsystem richtet sich nach den Datenschutzbestimmungen des jeweiligen Betreibers.</p>
+</section>
+<section class="policy-subsection" id="de-camera">
+<h4>2.3 Camera Control</h4>
+<p>Camera Control kommuniziert direkt mit unterstützten Kameras im vom Nutzer ausgewählten Netzwerk.</p>
+<p>Steuerbefehle und Vorschaudaten werden direkt zwischen dem Gerät des Nutzers und der Kamera übertragen. Kameravorschaubilder werden lediglich vorübergehend zur Darstellung verarbeitet und weder an AV Toolbox hochgeladen noch durch AV Toolbox dauerhaft gespeichert.</p>
+<p>Der Verbindungsstatus einer Kamera wird nicht dauerhaft gespeichert.</p>
+</section>
+<section class="policy-subsection" id="de-storage">
+<h4>2.4 Lokale Speicherung in der App</h4>
+<p>AV Toolbox speichert nur eine begrenzte Menge an Informationen lokal auf dem Gerät des Nutzers.</p>
+<p>Dazu gehören aktuell die ausgewählte Darstellung im Light- oder Dark-Mode sowie bis zu drei zuletzt verwendete Companion-Serveradressen.</p>
+<p>Die Funktion External Display kann außerdem eine lokale, ausschließlich der App zugängliche Kopie eines vom Nutzer ausdrücklich ausgewählten Bildes speichern. Zusätzlich werden technische Metadaten wie Dateiname, Abmessungen und gewählter Skalierungsmodus gespeichert. Das ausgewählte Bild kann innerhalb der Funktion wieder entfernt werden.</p>
+<p>Mit der App ausgelieferte Mediendateien können für die technische Wiedergabe ebenfalls in den privaten App-Speicher kopiert werden.</p>
+<p>Lokal gespeicherte App-Daten werden nicht an AV Toolbox übertragen. Sie verbleiben grundsätzlich auf dem Gerät, bis sie vom Nutzer geändert oder gelöscht werden, die App-Daten gelöscht werden oder die Anwendung deinstalliert wird. Abweichendes Verhalten des Android-Betriebssystems oder von Geräte- beziehungsweise Backup-Funktionen bleibt hiervon unberührt.</p>
+</section>
+<section class="policy-subsection" id="de-permissions">
+<h4>2.5 Geräteberechtigungen</h4>
+<p>Die aktuelle Android-Version verwendet netzwerkbezogene Berechtigungen, die für die Kommunikation im lokalen Netzwerk, die Erkennung des Netzwerkstatus und die multicastbasierte Dienstsuche erforderlich sind.</p>
+<p>Die aktuelle Version verlangt keine Android-Berechtigungen für den ungefähren oder genauen Standort, die Gerätekamera, das Mikrofon, Kontakte oder einen allgemeinen Zugriff auf die Medienbibliothek.</p>
+<p>Wenn der Nutzer ein eigenes Bild für External Display auswählt, wird der System-Dateiauswahldialog von Android verwendet. Dadurch bestimmt der Nutzer ausdrücklich, auf welche Datei die App zugreifen darf.</p>
+</section>
+<section class="policy-subsection" id="de-security">
+<h4>2.6 Netzwerksicherheit</h4>
+<p>Einige professionelle AV-Geräte und Dienste verwenden Protokolle wie HTTP, die keine Transportverschlüsselung bereitstellen.</p>
+<p>AV Toolbox unterstützt solche lokalen Protokolle, soweit dies für die Kompatibilität mit den jeweiligen Geräten erforderlich ist. Netzwerksteuerungsfunktionen sollten deshalb ausschließlich in vertrauenswürdigen lokalen Netzwerken verwendet werden. Zusätzlich sollten die Sicherheitsempfehlungen des jeweiligen Geräteherstellers beachtet werden.</p>
+<p>AV Toolbox nutzt diese lokalen Verbindungen nicht zur Übertragung von Daten an einen von AV Toolbox betriebenen Cloud-Dienst.</p>
+</section>
+<section class="policy-subsection" id="de-third-party">
+<h4>2.7 Dienste Dritter</h4>
+<p>Die aktuelle AV-Toolbox-App enthält keine Werbe- oder Analysedienste und verwendet kein von AV Toolbox betriebenes Cloud-Backend.</p>
+<p>AV Toolbox kann mit AV-Produkten und Diensten anderer Anbieter kommunizieren, wenn der Nutzer die entsprechende Funktion verwendet. Diese Systeme werden unabhängig von AV Toolbox betrieben.</p>
+<p>Vertriebsplattformen wie Google Play können unabhängig davon Informationen im Zusammenhang mit Downloads, Käufen oder der Nutzung ihrer Dienste entsprechend ihren eigenen Datenschutzbestimmungen verarbeiten.</p>
+</section>
+</section>
+<section id="de-website">
+<h3>3. AV-Toolbox-Website</h3>
+<p>Die Website von AV Toolbox besteht derzeit aus statischem HTML und CSS.</p>
+<p>Der Website-Code enthält keine Werbung, keine Analyse- oder Tracking-Skripte, keine extern gehosteten Schriftarten und kein Kontaktformular.</p>
+<p>Die Website wird derzeit über GitHub Pages bereitgestellt.</p>
+<p>Beim Aufruf einer GitHub-Pages-Website protokolliert GitHub die IP-Adresse des Besuchers zu Sicherheitszwecken. GitHub kann darüber hinaus technische Anfrage- und Sicherheitsdaten entsprechend den eigenen Datenschutzbestimmungen verarbeiten.</p>
+<p>Zweck dieser Verarbeitung ist die sichere, zuverlässige und technisch notwendige Bereitstellung der Website. Soweit diese Verarbeitung uns zuzurechnen ist, erfolgt sie auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse liegt in der sicheren und zuverlässigen Bereitstellung der AV-Toolbox-Website.</p>
+<p>GitHub kann personenbezogene Daten auch in Staaten außerhalb des Europäischen Wirtschaftsraums, insbesondere in den Vereinigten Staaten, verarbeiten. GitHub gibt an, hierfür soweit anwendbar anerkannte Übermittlungsmechanismen wie das EU-U.S. Data Privacy Framework sowie Standardvertragsklauseln der Europäischen Kommission einzusetzen.</p>
+<p>AV Toolbox betreibt keine eigene Besucheranalyse und keine eigene Auswertung von Website-Zugriffsprotokollen.</p>
+<p>Sollte der Hostinganbieter der Website geändert werden, wird diese Datenschutzerklärung entsprechend angepasst.</p>
+</section>
+<section id="de-email">
+<h3>4. Kontakt per E-Mail</h3>
+<p>Sobald die AV-Toolbox-Kontaktadresse aktiviert ist, kann AV Toolbox per E-Mail kontaktiert werden.</p>
+<p>Bei einer Kontaktaufnahme per E-Mail verarbeiten wir die in der Nachricht enthaltenen Angaben, die E-Mail-Adresse sowie die für Versand und Beantwortung technisch erforderlichen Informationen.</p>
+<p>Abhängig vom Inhalt der Anfrage erfolgt die Verarbeitung auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, soweit die Kommunikation zur Durchführung eines Vertrags oder vorvertraglicher Maßnahmen erforderlich ist, oder auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO bei allgemeinen Support- und sonstigen Anfragen. Unser berechtigtes Interesse liegt in der Beantwortung berechtigter Anfragen zu AV Toolbox.</p>
+<p>Der E-Mail-Dienst wird bereitgestellt durch:</p>
+<p class="placeholder policy-placeholder">[[MAIL_PROVIDER]]</p>
+<p>Die endgültigen Angaben zum Anbieter werden ergänzt, sobald der E-Mail-Dienst von AV Toolbox aktiv ist.</p>
+</section>
+<section id="de-retention">
+<h3>5. Speicherdauer und Löschung</h3>
+<p>Daten, die ausschließlich lokal von der AV-Toolbox-App gespeichert werden, sind für den Betreiber von AV Toolbox nicht zugänglich. Sie können abhängig von der jeweiligen Datenart innerhalb der App, durch Löschen der App-Daten oder durch Deinstallation der Anwendung entfernt werden.</p>
+<p>Hostingdaten der Website werden von GitHub entsprechend den dort geltenden Speicher- und Sicherheitsrichtlinien aufbewahrt. AV Toolbox führt keine eigene Datenbank zur Besucheranalyse.</p>
+<p>E-Mail-Korrespondenz wird nur so lange gespeichert, wie dies zur Bearbeitung der Anfrage erforderlich ist. Soweit gesetzliche Aufbewahrungspflichten bestehen oder Daten zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen benötigt werden, kann eine längere Speicherung erforderlich sein.</p>
+</section>
+<section id="de-recipients">
+<h3>6. Empfänger und internationale Datenübermittlung</h3>
+<p>AV Toolbox verkauft keine personenbezogenen Daten.</p>
+<p>Personenbezogene Daten im Zusammenhang mit Websiteaufrufen können von GitHub als Hostinganbieter verarbeitet werden.</p>
+<p>Sobald der E-Mail-Support aktiviert ist, kann der ausgewählte E-Mail-Anbieter Kontaktdaten zur Bereitstellung des E-Mail-Dienstes verarbeiten.</p>
+<p>GitHub ist international tätig und kann personenbezogene Daten außerhalb des Europäischen Wirtschaftsraums verarbeiten. Die hierfür eingesetzten Schutzmechanismen beschreibt GitHub in den eigenen Datenschutzinformationen.</p>
+</section>
+<section id="de-rights">
+<h3>7. Rechte betroffener Personen</h3>
+<p>Soweit wir personenbezogene Daten über Sie verarbeiten, stehen Ihnen nach Maßgabe der DSGVO insbesondere Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Widerspruch sowie gegebenenfalls Datenübertragbarkeit zu.</p>
+<p>Soweit eine Verarbeitung auf einer Einwilligung beruht, kann diese Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen werden.</p>
+<p>Darüber hinaus besteht ein Recht auf Beschwerde bei einer zuständigen Datenschutzaufsichtsbehörde.</p>
+<p>Bitte beachten Sie, dass Daten, die ausschließlich lokal innerhalb der AV-Toolbox-App verarbeitet und nicht an uns übertragen werden, von uns weder abgerufen noch gelöscht werden können. Diese Daten können unmittelbar auf dem eigenen Gerät verwaltet werden.</p>
+</section>
+<section id="de-automated">
+<h3>8. Automatisierte Entscheidungen</h3>
+<p>AV Toolbox verwendet personenbezogene Daten nicht für automatisierte Entscheidungen oder Profiling, die rechtliche oder vergleichbar erhebliche Auswirkungen auf eine Person haben.</p>
+</section>
+<section id="de-changes">
+<h3>9. Änderungen dieser Datenschutzerklärung</h3>
+<p>Diese Datenschutzerklärung kann angepasst werden, wenn AV Toolbox neue Funktionen erhält, zusätzliche Dienste verwendet, den Hostinganbieter wechselt oder sich die Verarbeitung personenbezogener Daten anderweitig ändert.</p>
+<p>Die jeweils aktuelle Fassung wird auf dieser Seite veröffentlicht.</p>
+</section>
+</article>
 </div>
 </div>
 </div>
