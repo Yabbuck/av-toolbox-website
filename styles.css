@@ -518,6 +518,16 @@ h2 {
   align-items:flex-start;
 }
 
+.feature-list li.feature-with-badge-inline {
+  flex-direction:row;
+  align-items:center;
+  gap:8px;
+}
+
+.feature-list li.feature-with-badge-inline .feature-badge {
+  margin-top:0;
+}
+
 .feature-list .feature-badge {
   display:inline-flex;
   align-items:center;
